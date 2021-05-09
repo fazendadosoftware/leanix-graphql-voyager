@@ -1,0 +1,57 @@
+{
+  "name": "LeanIX GraphQL Voyager",
+  "version": "1.0.0",
+  "description": "Custom Report Wrapper for GraphQL Voyager",
+  "engines": {
+    "node": ">=14.15.4"
+  },
+  "leanixReport": {
+    "id": "net.leanix.report.graphqlVoyager",
+    "title": "LeanIX GraphQL Voyager",
+    "defaultConfig": {}
+  },
+  "leanixReportingCli": {
+    "distPath": "dist",
+    "buildCommand": "node_modules/.bin/webpack"
+  },
+  "scripts": {
+    "build": "lxr build",
+    "start": "lxr start",
+    "upload": "lxr upload",
+    "webpack": "webpack"
+  },
+  "keywords": [
+    "leanix",
+    "custom-report"
+  ],
+  "author": "Paulo Santos <paulo@fazendadosoftware.com>",
+  "private": true,
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-transform-react-jsx": "^7.13.12",
+    "@babel/plugin-transform-runtime": "^7.13.15",
+    "@babel/preset-env": "^7.14.1",
+    "@babel/preset-react": "^7.13.13",
+    "autoprefixer": "^10.2.5",
+    "babel-loader": "^8.0.4",
+    "copy-webpack-plugin": "^4.6.0",
+    "css-loader": "^3.2.0",
+    "file-loader": "^2.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "postcss-loader": "^4.2.0",
+    "style-loader": "^0.23.1",
+    "tailwindcss": "^2.1.2",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.28.4",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.14"
+  },
+  "dependencies": {
+    "@leanix/reporting": "^0.3.3",
+    "graphql": "^15.5.0",
+    "graphql-voyager": "^1.0.0-rc.31",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
