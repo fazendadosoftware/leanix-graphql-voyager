@@ -26,12 +26,22 @@ module.exports = {
           }
         }
       },
-
+      /* Load webworker */
+      {
+        test: /\.worker\.js$/,
+        use: {
+          loader: "worker-loader",
+          options: {
+            inline: "fallback",
+            publicPath: "/workers/"
+          }
+        }
+      },
       /**
        * Bundle CSS, images and fonts
        */
       { test: /\.css$/, use: ['style-loader', 'css-loader', 'postcss-loader'] },
-      { test: /\.(otf|ttf|woff|woff2)$/, use: ['url-loader?limit=10000'] },
+      { test: /\.(eot|otf|ttf|woff|woff2)$/, use: ['url-loader?limit=10000'] },
       { test: /\.(jpg|png|gif)$/, use: ['url-loader?limit=10000'] },
       { test: /\.(eot|svg)$/, use: ['file-loader'] }
     ]
@@ -51,7 +61,10 @@ module.exports = {
       template: 'src/index.html'
     })
   ],
-
+  // https://github.com/webpack-contrib/css-loader/issues/447
+  node: {
+    fs: 'empty'
+  },
   devServer: {
     // "disableHostCheck" added due to issue: https://github.com/webpack/webpack-dev-server/issues/1604
     // Fix should be done with: https://github.com/webpack/webpack-dev-server/pull/1608
