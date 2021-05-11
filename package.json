@@ -24,7 +24,7 @@
     "leanix",
     "custom-report"
   ],
-  "author": "Paulo Santos <paulo@fazendadosoftware.com>",
+  "author": "LeanIX GmbH",
   "private": true,
   "license": "UNLICENSED",
   "devDependencies": {

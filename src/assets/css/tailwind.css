@@ -5,11 +5,10 @@
 @layer base {
   @font-face {
     font-family: "Axiforma-Regular";
-    src: url("//db.onlinewebfonts.com/t/ef3aab6eae44b00ed09594544784e6d8.eot");
-    src: url("//db.onlinewebfonts.com/t/ef3aab6eae44b00ed09594544784e6d8.eot?#iefix") format("embedded-opentype"),
-      url("//db.onlinewebfonts.com/t/ef3aab6eae44b00ed09594544784e6d8.woff2") format("woff2"),
-      url("//db.onlinewebfonts.com/t/ef3aab6eae44b00ed09594544784e6d8.woff") format("woff"),
-      url("//db.onlinewebfonts.com/t/ef3aab6eae44b00ed09594544784e6d8.ttf") format("truetype"),
-      url("//db.onlinewebfonts.com/t/ef3aab6eae44b00ed09594544784e6d8.svg#Axiforma-Regular") format("svg");
+    src: url("//fonts/Axiforma/ef3aab6eae44b00ed09594544784e6d8.eot");
+    src: url("//fonts/Axiforma/ef3aab6eae44b00ed09594544784e6d8.eot?#iefix") format("embedded-opentype"),
+      url("//fonts/Axiforma/ef3aab6eae44b00ed09594544784e6d8.woff2") format("woff2"),
+      url("//fonts/Axiforma/ef3aab6eae44b00ed09594544784e6d8.woff") format("woff"),
+      url("//fonts/Axiforma/ef3aab6eae44b00ed09594544784e6d8.ttf") format("truetype");
   } 
 }
