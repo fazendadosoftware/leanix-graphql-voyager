@@ -26,17 +26,6 @@ module.exports = {
           }
         }
       },
-      /* Load webworker */
-      {
-        test: /\.worker\.js$/,
-        use: {
-          loader: "worker-loader",
-          options: {
-            inline: "fallback",
-            publicPath: "/workers/"
-          }
-        }
-      },
       /**
        * Bundle CSS, images and fonts
        */
@@ -51,11 +40,7 @@ module.exports = {
      * Copy assets into dist folder.
      */
     new CopyWebpackPlugin([{ from: 'src/assets', to: 'assets' }]),
-
-    /**
-     * Insert created bundles as script tags at the end
-     * of the body tag in index.html
-     */
+    new CopyWebpackPlugin([{ from: 'node_modules/graphql-voyager/dist/voyager.worker.js' }]),
     new HtmlWebpackPlugin({
       inject: true,
       template: 'src/index.html'

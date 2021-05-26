@@ -45,8 +45,7 @@
     "url-loader": "^1.1.2",
     "webpack": "^4.28.4",
     "webpack-cli": "^3.2.1",
-    "webpack-dev-server": "^3.1.14",
-    "worker-loader": "^3.0.8"
+    "webpack-dev-server": "^3.1.14"
   },
   "dependencies": {
     "@leanix/reporting": "^0.3.3",
