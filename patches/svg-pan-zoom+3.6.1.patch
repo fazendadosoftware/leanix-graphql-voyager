@@ -1,0 +1,13 @@
+diff --git a/node_modules/svg-pan-zoom/src/control-icons.js b/node_modules/svg-pan-zoom/src/control-icons.js
+index 68eceba..4fd875c 100644
+--- a/node_modules/svg-pan-zoom/src/control-icons.js
++++ b/node_modules/svg-pan-zoom/src/control-icons.js
+@@ -28,7 +28,7 @@ module.exports = {
+       "translate(" +
+         (instance.width - 70) +
+         " " +
+-        (instance.height - 76) +
++        // (instance.height - 76) +
+         ") scale(0.75)"
+     );
+     zoomGroup.setAttribute("class", "svg-pan-zoom-control");
