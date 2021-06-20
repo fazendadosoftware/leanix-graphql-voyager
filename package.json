@@ -1,6 +1,6 @@
 {
   "name": "LeanIX GraphQL Voyager",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Custom Report Wrapper for GraphQL Voyager",
   "engines": {
     "node": ">=14.15.4"
